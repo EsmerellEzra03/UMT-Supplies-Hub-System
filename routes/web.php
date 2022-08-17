@@ -22,3 +22,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/condition/index', [App\Http\Controllers\ConditionController::class, 'index'])->name('condition:index');
+
+Route::get('/condition/create', [App\Http\Controllers\ConditionController::class, 'create'])->name('condition:create');
