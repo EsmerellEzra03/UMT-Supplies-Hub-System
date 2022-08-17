@@ -12,4 +12,9 @@ class Condition extends Model
     protected $fillable = [
         'name',
     ];
+
+    public function item()
+    {
+        return $this->hasOne('App\Models\Item');
+    }
 }
