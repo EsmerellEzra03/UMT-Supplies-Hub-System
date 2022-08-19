@@ -15,6 +15,7 @@ class Item extends Model
         'quantity',
         'condition_id'
     ];
+    
 
     public function condition()
     {
