@@ -34,4 +34,18 @@ Route::post('/condition/edit/{condition}', [App\Http\Controllers\ConditionContro
 
 Route::get('/condition/destroy/{condition}', [App\Http\Controllers\ConditionController::class, 'destroy'])->name('condition:destroy');
 
+// Item Route
+Route::get('/item/index', [App\Http\Controllers\ItemController::class, 'index'])->name('item:index');
+
+Route::get('/item/create', [App\Http\Controllers\ItemController::class, 'create'])->name('item:create');
+
+Route::post('/item/store', [App\Http\Controllers\ItemController::class, 'store'])->name('item:store');
+
+Route::get('/item/show/{item}', [App\Http\Controllers\ItemController::class, 'show'])->name('item:show');
+
+Route::post('/item/edit/{item}', [App\Http\Controllers\ItemController::class, 'edit'])->name('item:edit');
+
+Route::get('/item/destroy/{item}', [App\Http\Controllers\ItemController::class, 'destroy'])->name('item:destroy');
+
+
 require __DIR__.'/auth.php';
