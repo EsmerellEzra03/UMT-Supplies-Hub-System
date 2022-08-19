@@ -15,6 +15,8 @@
                         Create Condition
                     </a>
 
+                    
+
                     <table class="min-w-full">
                         <thead>
                             <tr>
